@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>JSON</title>
+        </head>
+        <body>          
+            <input type="text" id="name_1" placeholder="Enter First Name"/><br/><br/>
+            <input type="text" id="name_2" placeholder="Enter Second Name"/><br/><br/>
+            <input type="date" id="dt"/><br/><br/>
+            <input type="password" id="pw" placeholder="password" disabled/><br/><br/>
+            <button onclick="j_file()">Output</button>
+            <script>
+                let j_file = () =>{
+                    let name_1 = document.getElementById("name_1").value;
+                    let name_2 = document.getElementById("name_2").value;
+                    let dob = document.getElementById("dt").value;
+                    let pw = name_1.slice(0,4)+dob.slice(0,4);
+                    document.getElementById('pw').value = pw;
+                    var pw_obj = {
+                        "f_name":name_1,
+                        "s_name":name_2,
+                        "date of birtrh":dob,
+                        "password":pw
+                    };
+                    document.write(JSON.stringify(pw_obj))
+                }
+            </script>
+        </body>
+    </html>

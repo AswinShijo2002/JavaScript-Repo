@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expresssion</title>
+</head>
+
+<body>
+    <label>Enter the name:</label>
+    <input type="text" id="nam" placeholder="Enter the name">
+    <button onclick="aji()">Submit</button>
+    <script>
+        function aji() {
+            let inputE1 = document.getElementById("nam").value;
+            let pattern = /^[A-Z][a-z]*[\d]{4,6}$/g;
+            if (pattern.test(inputE1) == true) {
+                alert("its my name ");
+            }
+            else {
+                alert("its not my name");
+            }
+        };
+    </script>
+</body>
+
+</html>

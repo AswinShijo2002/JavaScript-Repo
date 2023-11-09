@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var user=prompt("Enter your Number");
+        function aswin(num) {
+            switch(true){
+                case((num>=10) && (num<=99)):
+                document.write("True")
+                break;
+                case((num>=100) && (num<=999)):
+                document.write("The value is true");
+                break;
+                case((num>=1000) && (num<=10000)):
+                document.write("False");
+                break;
+                default:{
+                document.write("Null");
+                break;
+                }
+            }
+        }
+        aswin(user);
+    </script>
+</body>
+</html>

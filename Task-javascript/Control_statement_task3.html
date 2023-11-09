@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var result1=0,result2=0,i;
+        function number(){
+            // var result1,result2,i;
+            for(i=0;i<1000;i++){
+                if(i%3==0){
+                    result1 += i;
+                }
+                else if(i%5==0){
+                    result2 +=i;
+                }
+                // result1+=result2;
+            }
+            result1+=result2;
+            document.write(result1);
+            // document.write(result2);
+        }
+        number();
+    </script>
+</head>
+<body>
+   
+</body>
+</html>
+

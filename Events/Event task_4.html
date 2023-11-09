@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Event</title>
+    </head>
+    <body>
+        <label>Click our inputs</label>
+        <button type="text" onclick="sam()">Click</button>
+        <script>
+            var input1=prompt("Enter the valu one:");
+            var input2=prompt("Enter the value two:");
+            function sam(){     
+                if((input1==""||input1==null)||(input2==null||input2=="")){
+                    alert("kindly fill it and try again😉");
+                }
+                else{
+                    alert("given a value is valid");
+                }
+            }sam();
+        </script>
+    </body>
+</html>

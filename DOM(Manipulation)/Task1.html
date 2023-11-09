@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/JavaScript">
+        function task1(){
+            var newDiv=document.createElement('div');
+            var text1=document.createTextNode("login page");
+            var ipBox1=document.createElement('input');
+            var btn1=document.createElement('button');
+            var btnText=document.createTextNode("click");
+            newDiv.appendChild(text1);
+            newDiv.appendChild(ipBox1);
+            btn1.appendChild(btnText);
+            newDiv.appendChild(btn1);
+            document.body.appendChild(newDiv);
+        }
+    </script>
+</head>
+<body>
+    <button onclick="task1()">click here</button>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function mail(mymail) {
+            var input1 = mymail.slice(0,4);
+            var input2 = mymail.slice(15);
+            var input3 = input1 + "...." + input2;
+            return input3
+        }
+        document.write(mail("shijoaswin1@gmail.com"));
+
+    </script>
+</body>
+
+</html>

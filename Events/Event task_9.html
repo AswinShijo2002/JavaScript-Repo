@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="integerInput">Enter an Integer:</label>
+    <input type="text" id="input" placeholder="Enter an integer">
+    <button onclick="int()">Add Integer</button>
+    
+    <select id="sel">
+        <option>select an integer</option>
+    </select>
+    
+    <script>
+        function int() 
+        {
+            var user_input = parseInt(document.getElementById("input").value);
+            var ops = "";
+            for(var i=0;i<=user_input;i++)
+            {
+                ops += "<option>"+i+"</option>"
+            }
+            // console.log(ops);//
+            
+            document.getElementById("sel").innerHTML = ops;
+        }
+    </script>
+</body>
+</html>

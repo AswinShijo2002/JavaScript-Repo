@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/JavaScript">
+        var num1=parseInt(window.prompt("Enter the first number"));
+        var num2=parseInt(window.prompt("Enter the second number"));
+        function dis(){
+            document.getElementById("add").innerHTML = "Addition of " + num1 + " and " + num2 + " is " + (num1+num2);
+            document.getElementById("sub").innerHTML = "Subtraction of " + num1 + " and " + num2 + " is " + (num1-num2);
+            document.getElementById("mul").innerHTML = "Multiplication of " + num1 + " and " + num2 + " is " + (num1*num2);
+            document.getElementById("div").innerHTML = "Division of " + num1 + " and " + num2 + " is " + (num1/num2);
+            document.getElementById("mod").innerHTML = "Modules of " + num1 + " and " + num2 + " is " + (num1%num2);
+        }
+    </script>
+</head>
+<body>
+<button onclick="dis()">click</button>
+<p id="add"></p>
+<p id="sub"></p>
+<p id="mul"></p>
+<P id="div"></P>
+<p id="mod"></p>
+</body>
+</html>

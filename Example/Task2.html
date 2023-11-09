@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        start_date_str = input("Enter the course start date (YYYY-MM-DD): ")
+
+
+
+        start_date = datetime.strptime(start_date_str, '%Y-%m-%d')
+
+
+        completion_date = start_date + timedelta(days=90)
+
+
+        print("Course start date:", start_date.strftime('%Y-%m-%d'))
+        print("Course completion date:", completion_date.strftime('%Y-%m-%d'))
+
+
+        print("Invalid date format. Please use the format YYYY-MM-DD.")
+        document.write( start_date_str)
+    </script>
+</body>
+</html>

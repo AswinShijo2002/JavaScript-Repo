@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sub_dt(){
+            var d = new Date(document.getElementById("ip").value);
+            var dt_sub = d.getMonth()+1 +"-"+d.getDate(d.setDate(d.getDate()-5))+"-"+d.getFullYear();
+            document.getElementById("op1").value = dt_sub;
+
+        }
+        function add_dt(){
+            var d = new Date(document.getElementById("ip").value);
+            var dt_add = d.getMonth()+1 +"-"+d.getDate(d.setDate(d.getDate()+5))+"-"+d.getFullYear();
+            document.getElementById("op2").value = dt_add;
+
+        }
+
+    </script>
+    <input type="date" id="ip">
+    <button onclick="sub_dt()">- 5day</button>
+    <input id="op1">
+    <button onclick="add_dt()">+5 Day</button>
+    <input id="op2">
+
+</body>
+</html>

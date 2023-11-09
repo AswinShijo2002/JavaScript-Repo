@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expression</title>
+</head>
+<body>
+    <label>Enter the Password:</label>
+    <input type="password" id="pass" placeholder="Enter the password">
+    <button onclick="sam()">Submit</button>
+
+    <script>
+           function sam() {
+            let inputE1 = document.getElementById("pass").value;
+            let pattern = /^[a-z]*[\d]\@[a-z]*[a-z]*$/g;
+            if (pattern.test(inputE1)) {
+                alert("Password is correct ");
+            }
+            else {
+                alert("Password is wrong");
+            }
+        };  
+    </script>
+</body>
+</html>

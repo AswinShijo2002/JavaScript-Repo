@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+  <script>
+     function add(){
+            var a=parseInt(document.getElementById("t3").value);
+            var b=parseInt(document.getElementById("t4").value);
+            var c=parseInt(document.getElementById("t5").value);
+            var d=a+b+c;
+            document.getElementById("t6").value=d;
+            // var =parseInt(document.getElementById("t7").value);
+            var e=d/3;
+            document.getElementById("t7").value=e;
+            
+            
+            if (a>=35,b>=35,c>=35)
+            {
+              document.getElementById("t8").value="pass";
+
+            if (d>=280 && d<=100)
+            {
+              document.getElementById("t8").value="Grade B";
+
+            }
+            if (d>=260 && d<=279)
+            {
+              document.getElementById("t8").value="Grade c";
+
+            }
+            if (d>=240 && d<=259)
+            {
+              document.getElementById("t8").value="Grade c";
+
+            }
+            }
+            else 
+            {
+              document.getElementById("t8").value="Fail";
+
+            }
+            
+        }
+        // switch(true){
+        //   case n1>=
+        //   document.getElementById("t8").innerHTML=
+        // }
+</script>
+        <style>
+          body{
+            background-image: url(https://cdn.blog.fonepaw.com/images/animated-gif-wallpaper.gif);
+            background-size: cover;
+          }
+          h1{
+            margin-left: 550px;
+            color: whitesmoke;
+            font-family: cursive;
+          }
+          table{
+            color: whitesmoke;
+            font-family: ALGERIAN;
+            height: 500px;
+            width: 500px;
+            margin-left: 500px;
+            font-size: x-large;
+          }
+        </style>   
+</script>
+<body>
+    <h1>STUDENTS LOGIN</h1>
+    <div class="child">
+    <table>
+      <tr>
+        <td><label>Enter your name</label></td>
+        <td><input type="text" id="t1"></td>
+      </tr>
+      <tr>
+        <td><label>Enter your ROll number</label></td>
+        <td><input type="text" id="t2"></td>
+      </tr>
+      <tr>
+        <td><label>Mark-1</label></td>
+        <td><input type="text" id="t3"></td>
+      </tr>
+      <tr>
+        <td><label>Mark-2</label></td>
+        <td><input type="text" id="t4"></td>
+      </tr>
+      <tr>
+        <td><label>Mark-3</label></td>
+        <td><input type="text" id="t5"></td>
+      </tr>
+      <tr>
+        <td><label>Total</label></td>
+        <td><input type="text" id="t6"></td>
+      </tr>
+      <tr>
+        <td><label>Percentage</label></td>
+        <td><input type="text" id="t7"></td>
+      </tr>
+      <tr>
+        <td><label>Result</label></td>
+        <td><input type="text" id="t8"></td>
+      </tr>
+      <tr>
+        <td><button onclick="add()">submit</button></td>
+        <!-- <td><button onclick="e()">submit</button></td> -->
+      </tr>
+    </table>
+  </div>  
+</body>
+</html>

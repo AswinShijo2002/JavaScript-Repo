@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expression</title>
+</head>
+
+<body>
+    <label>Enter the Number:</label>
+    <input type="number" id="num" placeholder="Enter the number">
+    <button onclick="sam()">Submit</button>
+
+    <script>
+        function sam() {
+            let inputE1 = document.getElementById("num").value;
+            let pattern = /^[\d]{10}$/g;
+            if (pattern.test(inputE1)) {
+                alert(" My number");
+            }
+            else {
+                alert("its not my number");
+            }
+        };  
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <script>
+        let add=(a,b)=>{
+            return(a+b);
+         }
+         let sub=(a,b)=>{
+            return(a-b)
+         }
+         let mul=(a,b)=>{
+            return(a*b)
+         }
+         let div=(a,b)=>{
+            return(a/b)
+         }
+         let calculate=(x,y,opp)=>{
+            return opp(x,y)
+         }
+         document.write(calculate(10,5,add));
+         document.write(calculate(10,5,sub));
+         document.write(calculate(10,5,mul));
+         document.write(calculate(10,5,div));
+      </script>
+</body>
+</html>

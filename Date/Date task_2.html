@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date</title>
+</head>
+
+<body>
+    <script>
+        function total_days(m, y) {
+            var last_day = new Date(y, m, 0)
+            return last_day.getDate();
+        }
+        document.write(total_days(1, 2012)+"<br>");
+        document.write(total_days(2, 2012)+"<br>");
+        document.write(total_days(9, 2012)+"<br>");
+        document.write(total_days(12, 2012));
+    </script>
+</body>
+
+</html>

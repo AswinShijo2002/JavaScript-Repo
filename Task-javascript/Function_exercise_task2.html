@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        
+        function large(){
+            var a=parseInt(document.getElementById("gt").value);
+             var b=parseInt(document.getElementById("gr").value);
+             if(a==b)
+             {
+                document.getElementById("gd").value = "Equal";
+             }
+           else if(a>b)    
+           {
+            document.getElementById("gd").value = "A is greatest";
+           }  
+           else{
+            document.getElementById("gd").value = "B is greatest";
+           }      
+            
+           
+        }
+        
+    </script>
+</head>
+<body>
+  <input type="number" id="gt">
+  <input type="number" id="gr">
+  <input type="text" id="gd">
+  <button onclick="large()"> click me</button>
+    
+</body>
+</html>
